@@ -1,9 +1,14 @@
 # Major-Project
 Smart Doc Search
 
-To download the project, use clone
-Make virtual environment and activate it.
-Run 'pip install -r requirements.txt'
-Run 'python smartdoc\manage.py migrate' to generate local database and tables in it.
-Run 'python smartdoc\manage.py runserver' to launch server on localhost
-Go to 127.0.0.1:8000/
+1. To download the project, use clone
+
+2. Make virtual environment and activate it.
+
+3. Run 'pip install -r requirements.txt'
+
+4. Run 'python smartdoc\manage.py migrate' to generate local database and tables in it.
+
+5. Run 'python smartdoc\manage.py runserver' to launch server on localhost
+
+6. Go to 127.0.0.1:8000/
