@@ -28,7 +28,8 @@ python smartdoc\manage.py migrate
 
 5. To launch server on localhost,
 
-```python smartdoc\manage.py runserver
+```
+python smartdoc\manage.py runserver
 
 ```
 
