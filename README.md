@@ -14,6 +14,12 @@ git clone https://github.com/udbhavdave/Major.git <local-repo-name>
 
 2. Make virtual environment and activate it.
 
+```
+virtualenv env
+env\Scripts\activate (windows)
+source env/bin/activate (linux)
+```
+
 3. To install project dependencies,
 
 ```
