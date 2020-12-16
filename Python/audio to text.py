@@ -17,8 +17,9 @@
 
 #Python 2.x program to transcribe an Audio file
 import speech_recognition as sr
+import connection
 
-AUDIO_FILE = ("C:\\Users\\utkar\\Downloads\\Welcome.wav")
+AUDIO_FILE = ("..\\audio\\Welcome.wav")
 
 # use the audio file as the audio source
 
@@ -31,6 +32,7 @@ with sr.AudioFile(AUDIO_FILE) as source:
 
 try:
 	print("The audio file contains: " + r.recognize_google(audio))
+	connection.insertAudio(2, r.recognize_google(audio), AUDIO_FILE)
 
 except sr.UnknownValueError:
 	print("Google Speech Recognition could not understand audio")

@@ -1,12 +1,58 @@
 import pytesseract
 from pytesseract import Output
+import connection
 import cv2
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract'
 
-txt = pytesseract.image_to_string(r'U:\\MAJOR\\2.jpg')
+pth = r'..\\img\\3.jpg'
 
-print(txt)
+txt = pytesseract.image_to_string(pth)
+
+count = connection.fetchID() + 1
+
+connection.insertBLOB(count,txt,pth)
+
+# print(txt)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # tessdata_dir_config = '--tessdata-dir "U:/MAJOR/Python/img to text"'
 # pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
