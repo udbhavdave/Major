@@ -36,7 +36,6 @@ python smartdoc\manage.py migrate
 
 ```
 python smartdoc\manage.py runserver
-
 ```
 
 6. Go to http://127.0.0.1:8000/

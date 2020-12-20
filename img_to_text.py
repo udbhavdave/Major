@@ -1,10 +1,11 @@
 import pytesseract
 from pytesseract import Output
-import cv2
+#import cv2
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract'
-
-txt = pytesseract.image_to_string(r'U:\\MAJOR\\2.jpg')
+# pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract'
+path='..\\'+'oopp.jpeg'
+print(path)
+txt = pytesseract.image_to_string(path)
 
 print(txt)
 

@@ -1,0 +1,25 @@
+{% extends "search/layout.html" %} 
+{% block title %}Smart Doc Search{%endblock%} 
+{% block body %}
+
+<h1>Welcome !!</h1>
+<form enctype="multipart/form-data" action="{% url 'upload' %}" method="post">
+  {% csrf_token %} 
+  {{ upload.as_p }}
+  <input type="submit" value="upload"/>
+</form>
+
+<form action="{% url 'search' %}" method="post">
+  {% csrf_token %} 
+  {{ search.as_p }}
+  <input type="submit" value="search"/>
+</form>
+
+<h1>All Pictures:</h1>
+{% for pic in pics %}
+<img src="{{pic.image_name.url}}" alt="not available" />
+{% endfor %} 
+{% if message %}
+<h3>{{ message }}</h3>
+{% endif %} 
+{% endblock %}
