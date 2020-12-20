@@ -1,6 +1,60 @@
 import pytesseract
 from pytesseract import Output
+<<<<<<< HEAD:Python/img_to_text.py
 #import cv2
+=======
+import connection
+
+
+pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract'
+
+# pth = r'..\\img\\3.jpg'
+
+txt = pytesseract.image_to_string('10.jpg')
+
+count = connection.fetchID() + 1
+
+connection.insertBLOB(count,txt,'10.jpg')#direct image instant of path
+
+# print(txt)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> d5e92e5cfc82148cd2c6b336f5a7d5ad78e1e2ae:Python/img to text.py
 
 # pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract'
 path='..\\'+'oopp.jpeg'
