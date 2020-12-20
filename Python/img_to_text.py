@@ -7,7 +7,6 @@ path='..\\'+'oopp.jpeg'
 print(path)
 txt = pytesseract.image_to_string(path)
 
-print(txt)
 
 # tessdata_dir_config = '--tessdata-dir "U:/MAJOR/Python/img to text"'
 # pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'

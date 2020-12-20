@@ -1,0 +1,4 @@
+import connection
+
+connection.fetch()
+

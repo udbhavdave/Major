@@ -19,6 +19,8 @@ media
 *.py[cod]
 *$py.class
 
+#random
+.idea
 # vs code
 
 */.vscode/*
