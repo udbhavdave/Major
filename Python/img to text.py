@@ -1,17 +1,17 @@
 import pytesseract
 from pytesseract import Output
 import connection
-import cv2
+
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract'
 
-pth = r'..\\img\\3.jpg'
+# pth = r'..\\img\\3.jpg'
 
-txt = pytesseract.image_to_string(pth)
+txt = pytesseract.image_to_string('10.jpg')
 
 count = connection.fetchID() + 1
 
-connection.insertBLOB(count,txt,pth)
+connection.insertBLOB(count,txt,'10.jpg')#direct image instant of path
 
 # print(txt)
 
