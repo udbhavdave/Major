@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SDS-Gallery</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header class="hdr">
+            <span>SDS</span>
+            <a href="/">HOME</a>
+        </header>
+        <div class="container">
+            <div class="row">
+                <form action="/display" method="POST" enctype="multipart/form-data" class="frm">
+                    <div class="rht">
+                        <i class="fa fa-search"></i>
+                        <input type="text" name="search" placeholder="Search Keyword!" autocomplete="off">
+                        <input type="submit" name="submit" value="SEARCH" class="btn btn-success sub"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h1 class="cnt">Gallery</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <%if (records.length > 0){%>
+                    <% records.forEach(function(row){ %>
+                        <div class="col-md-4 dis">
+                            <img src="/uploads/<%= row.img %>" alt="image" onclick="onClick(this)">
+                        </div>
+                    <% }) 
+                } %>
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                      <img id="img01" style="width:100%">
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </body>
+    <script src="/js/script.js"></script> 
+</html>

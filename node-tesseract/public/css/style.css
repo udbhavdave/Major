@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body{
+    background-color: #f3eaea;
+}
+.hdr{
+    height: 75px;
+    background: hsla(0, 0%, 0%, .9);
+}
+.hdr a{
+    margin: 15px 25px 10px 0px;
+    float: right;
+    font: normal 35px Varela Round, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 5px;
+    border: 0px;
+}
+.hdr a:hover{
+    border: 3px solid white;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.hdr span{
+    margin-left: 25px;
+    float: left;
+    color: hsla(0, 0%, 0%, .9);
+    font: normal 65px Varela Round, sans-serif;
+    left: 0;
+    letter-spacing: 5px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    animation: move linear 2000ms infinite;
+}
+@keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 hsla(180, 100%, 50%, 1), 
+        -3px -3px 0 hsla(180, 100%, 50%, 1), 
+        -2px -2px 0 hsla(180, 100%, 50%, 1), 
+        -1px -1px 0 hsla(180, 100%, 50%, 1),
+        4px 4px 0 hsla(0, 100%, 50%, 1), 
+        3px 3px 0 hsla(0, 100%, 50%, 1), 
+        2px 2px 0 hsla(0, 100%, 50%, 1), 
+        1px 1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 hsla(0, 100%, 50%, 1), 
+        -3px 3px 0 hsla(0, 100%, 50%, 1), 
+        -2px 2px 0 hsla(0, 100%, 50%, 1), 
+        -1px 1px 0 hsla(0, 100%, 50%, 1),
+        4px -4px 0 hsla(180, 100%, 50%, 1), 
+        3px -3px 0 hsla(180, 100%, 50%, 1), 
+        2px -2px 0 hsla(180, 100%, 50%, 1), 
+        1px -1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 hsla(180, 100%, 50%, 1), 
+        3px 3px 0 hsla(180, 100%, 50%, 1), 
+        2px 2px 0 hsla(180, 100%, 50%, 1), 
+        1px 1px 0 hsla(180, 100%, 50%, 1),
+        -4px -4px 0 hsla(0, 100%, 50%, 1), 
+        -3px -3px 0 hsla(0, 100%, 50%, 1), 
+        -2px -2px 0 hsla(0, 100%, 50%, 1), 
+        -1px -1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }  
+  }
+
+.frm .rht{
+    margin: 25px;
+    position: relative;
+
+}
+  
+.frm .rht i{ 
+    position: absolute; 
+    left: 55%; 
+    top: 21px; 
+    color: gray;
+    font-size: 26px;
+} 
+input[type=text]{  
+    width: 30%;  
+    padding: 12px 40px;  
+    margin: 8px 0;  
+    margin-left: 54%;
+    display: inline-block;  
+    border: 1px solid #ccc;  
+    box-sizing: border-box;  
+    border-radius: 5px;
+}  
+.sub{  
+    padding: 13px 20px;  
+    margin: 7px 0;  
+    border: none;  
+    cursor: pointer;  
+    width: 15%;  
+}   
+button:hover {  
+    opacity: 0.8;  
+}  
+.cnt{
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin-top: 25px;
+}
+.dis img{
+    width: 100%;
+    height: 400px;
+    margin: 10px;
+    margin-top: 25px;
+    opacity: 0.7;
+}
+.dis img:hover{
+    opacity: 1;
+    box-shadow: 2px 3px 20px 10px rgba(68, 68, 68, 0.6);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* index */
+
+.upl{
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    padding: 25px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.upl .fle{
+    position: absolute;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+    width: 37.5%;
+}
+.upl .sub{
+    width: 100%;
+}
+
+.fle-trigger {
+    display: block;
+    padding: 14px 45px;
+    background: #39D2B4;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.fle:hover + .fle-trigger,
+.fle:focus + .fle-trigger,
+.fle-trigger:hover,
+.fle-trigger:focus {
+  background: #34495E;
+  color: #39D2B4;
+}
+
+/* .file-return {
+    color: blue;
+} */
+/* .file-return:not(:empty) {
+    margin: 1em 0;
+} */
+.file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+    text-align: center;
+}
+.file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: bold;
+}
+
+.emsg{
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+.smsg{
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.spin{
+    width: 100%;
+    position: fixed;
+}
+
+.spin img{
+    height: 100px;
+    margin-left: 47%;
+}
+.spin div{
+    margin-left: 33%;
+    font-size: large;
+}
+
+.spin div .org{
+    color: orange;
+}
+
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #2fca61;
+    border-color: #2fca61;
+}
+.w3-display-topright {
+    top: 75.5px;
+}

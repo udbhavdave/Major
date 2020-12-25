@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SDS</title>
+        <!-- CSS Only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header class="hdr">
+            <span>Smart DOC Search</span>
+            <a href="display">DISPLAY</a>
+        </header>
+        <div class="container">
+            <div class="row">
+                <h1 class="cnt">Upload Image</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form action="/" method="POST" enctype="multipart/form-data" onsubmit="return Validate(this);">
+                    <div class="upl">
+                        <input type="file" name="avatar" class="fle" id="fle" onchange="change()" />
+                        <label tabindex="0" for="my-file" class="fle-trigger">Select a file...</label>
+                        <p class="file-return" id="file-return"></p>
+                        <input type="submit" name="submit" class="btn btn-success sub" />
+                    </div>
+                    <div class="emsg" id="msg"></div>
+                    <div class="smsg" id="smsg" onchange="hide()">
+                        <%if (records.length > 0 && records[1] == 1){ %>
+                            <%= records[0] %>
+                        <% records[1]=0;} %>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="spinner" style="display: none;" class="spin">
+            <img src="/img/spin.gif" alt="loading"/>
+            <div>
+                <span class="org">Processing Your Image!!</span>
+                <span>It may take minutes...</span>
+            </div>
+            
+        </div>
+        <!-- <footer class="foot">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Team</h2>
+                    <ul>
+                        <li>U =></li>
+                        <li>U =></li>
+                        <li>V =></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>Office</h2>
+                    <ul>
+                        <li>Limbodi</li>
+                        <li>Gandhi Nagar</li>
+                        <li>Vijay Nagar</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li>u*********@*****.**m</li>
+                        <li>u*************@*****.**m</li>
+                        <li>v****************@*****.**m</li>
+                    </ul>
+                </div>
+            </div>
+        </footer> -->
+    </body>
+    <script src="/js/script.js"></script>
+    <!-- <script src="../app.js"></script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</html>
