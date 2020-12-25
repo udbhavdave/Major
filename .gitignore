@@ -161,3 +161,6 @@ dmypy.json
 
 # profiling data
 .prof
+
+# node-module
+node_modules/
